@@ -7,9 +7,9 @@
 #       format_version: '1.3'
 #       jupytext_version: 1.15.0
 #   kernelspec:
-#     display_name: Python [conda env:envHM] *
+#     display_name: venv
 #     language: python
-#     name: conda-env-envHM-py
+#     name: python3
 # ---
 
 # %% [markdown]
@@ -200,7 +200,7 @@ joblib.__version__
 # %%time
 
 #feel free to use a higher n_jobs if you can afford to
-results = Parallel(n_jobs=20)(delayed(metric)(i) for i in inputs) 
+results = Parallel(n_jobs=7)(delayed(metric)(i) for i in inputs) 
 
 targets = np.array(results)
 

@@ -16,8 +16,10 @@
 # ## Libraries
 
 # %% vscode={"languageId": "r"}
-mogp_dir <- "/data/rlguensat/conda_envs/envHM/lib/python3.8/site-packages/mogp_emulator"
+mogp_dir <- "/Users/thomaschristie/Documents/GitHub.nosync/L96HistoryMatching/venv/lib/python3.10/site-packages"
 ## important to add "import warning" at MutliOutputGP.py
+library(reticulate)
+use_virtualenv("/Users/thomaschristie/Documents/GitHub.nosync/L96HistoryMatching/venv")
 
 setwd('..')
 
