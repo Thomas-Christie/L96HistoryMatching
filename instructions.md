@@ -1,6 +1,6 @@
 # install mogp_emulator
 
-pip install mogp_emulator=0.5.0 
+pip install mogp_emulator==0.5.0 
 (already done if you're using binder)
 
 # find path of mogp_emulator
@@ -13,13 +13,20 @@ git clone -b devel https://github.com/BayesExeter/ExeterUQ_MOGP
 
 # BuildEmulator.R
 
-source("ExeterUQ_MOGP/BuildEmulator/AutoLMcode.R")
+Edit the two `source` lines to the following:
 
+```
+source("ExeterUQ_MOGP/BuildEmulator/AutoLMcode.R")
 source("ExeterUQ_MOGP/BuildEmulator/CustomPredict.R")
+```
 
 # HistoryMatching.R
 
+Edit the `source` line at the top of the file to the following:
+
+```
 source("ExeterUQ_MOGP/HistoryMatching/impLayoutplot.R")
+```
 
 replace ImplausibilityMOGP function by (to add parallelization, PR request pending):
 

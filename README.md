@@ -40,3 +40,11 @@ Steps:
 * save the designpoints then move to the Python notebook
 * read the saved data, and run the L96 on the design points, then save the metrics and go back to the R notebook
 * run History matching then repeat for subsequent waves !
+
+NOTE:
+I have converted notebooks to `.py` files to facilitate version control. If you wish to
+run an experiment, first convert the `.py` file to a `.ipynb` file using
+`jupytext --to notebook <notebook>.py`. It isn't guaranteed that the corresponding
+`.ipynb` file corresponds to the current `.py` file in the repo. Also ensure that you
+move the generated `.ipynb` file either to the `PerformHM_R` or `GenerateData_Python`
+directory due to the nature of relative imports.
